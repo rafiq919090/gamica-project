@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .flex-containor{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .flex-containor  div{
+        background-color: antiquewhite;
+        width: 120px;
+        text-align: center;
+        line-height: 70px;
+        font-size: 30px;
+        margin:10px;
+        border: 2px solid ;
+        transition: 3s linear;
+        
+    }
+    .flex-containor div:hover{
+        transform: rotate(180deg);
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .flex div{
+        background-color: antiquewhite;
+        width: 100px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        margin:10px;
+        border: 2px solid;
+        transition: 3s linear;
+
+    }
+    .flex div:hover{
+        transform:perspective(800px) rotateY(180deg);
+    }
+    .flex{
+        margin-left: 60px;
+    }
+    .flexb{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .flexb div{
+        background-color: antiquewhite;
+        width: 100px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        margin:10px;
+        border: 2px solid ;
+        transition: 2s linear;
+        
+    }
+    .flexb{
+        margin-left:180px;
+    }
+    .flexb div:hover{
+        transform: rotateY(180deg);
+    }
+    .main{
+        background-color: aqua;
+        width: 100%;
+        height: 400px;
+        margin-top: 40px;
+    }
+    .flex-containor  div{
+        animation-name: example;
+        animation-duration: 3s;
+
+    }
+    @keyframes example{
+        0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+    
+    .flex  div{
+        animation-name: example2;
+        animation-duration: 3s;
+
+    }
+    @keyframes example2{
+        0%   {background-color: red;}
+     25%  {background-color: yellow;}
+     50%  {background-color: blue;}
+     100% {background-color: green;}
+}
+    .flexb  div{
+        animation-name: example3;
+        animation-duration: 3s;
+
+    }
+    @keyframes example3{
+        0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="flex-containor">
+<div>Q</div>
+<div>W</div>
+<div>E</div>
+<div>R</div>
+<div>T</div>
+<div>Y</div>
+<div>U</div>
+<div>I</div>
+<div>O</div>
+<div>P</div>
+    </div>
+    <div class="flex">
+<div>A</div>
+<div>S</div>
+<div>D</div>
+<div>F</div>
+<div>G</div>
+<div>H</div>
+<div>J</div>
+<div>K</div>
+<div>L</div>
+
+    </div>
+    <div class="flexb">
+<div>Z</div>
+<div>X</div>
+<div>C</div>
+<div>V</div>
+<div>B</div>
+<div>N</div>
+<div>M</div>
+
+
+    </div>
+</div>
+</body>
+</html>

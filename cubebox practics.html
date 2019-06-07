@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .cube1 {
+    position: absolute;
+    left: 50%;
+    top: 300px;    
+}
+.cube2{
+    position:absolute;
+    left:35%;
+    top:410px;
+}
+.cube3{
+    position:absolute;
+    left:19.5%;
+    top:522px;
+}
+.topface{
+     transform: rotate(41deg); 
+    top: -158px;
+    left: 100px;
+    position: absolute;
+    padding: 35px;
+    width: 180px;
+    height: 180px;
+    background-color: brown;
+    
+    
+}
+ .topface div{
+    transform: skew(0deg, -50deg) scale(1, 1.16); 
+    background-color:burlywood;
+    font-size: 0.862em;
+    transform: skew(10deg, 12deg); 
+   
+}
+.leftface{
+    transform: skew(0deg, 30deg);
+    background-color:burlywood;
+    position: absolute;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+}
+.rightface{
+    transform: skew(0deg, -30deg);
+    background-color:burlywood;
+    left: 200px;
+    position: absolute;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+}    
+.cube1 .topface .leftface .rightface:hover {
+    background-color:cadetblue;
+    
+}
+
+    
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="cube1">
+        <div class="topface">
+        <div>
+            <p>Top cube face</p>
+        </div>
+    </div>
+    <div class="leftface">
+        <h2>Left cube face</h2>
+    </div>
+    <div class="rightface">
+<h2>Right Face</h2>
+    </div>
+    </div>
+    <div class="cube2">
+            <div class="topface">
+            <div>
+                <p>Top cube face</p>
+            </div>
+        </div>
+        <div class="leftface">
+            <h2>Left cube face</h2>
+        </div>
+        <div class="rightface">
+    <h2>Right Face</h2>
+        </div>
+        </div>
+        <div class="cube3">
+                <div class="topface">
+                <div>
+                    <p>Top cube face</p>
+                </div>
+            </div>
+            <div class="leftface">
+                <h2>Left cube face</h2>
+            </div>
+            <div class="rightface">
+        <h2>Right Face</h2>
+            </div>
+            </div>
+    
+  </body>      
+</body>
+</html>

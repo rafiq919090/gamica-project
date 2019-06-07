@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        @keyframes wheelRotation{
+
+            0%{
+                transform: rotate(360deg)
+            }
+
+            100%{
+                transform: rotate(0deg)
+            }
+
+        }
+
+        @keyframes carAnimation {
+
+            0% {
+                left: 0;
+                margin-top:0px;
+            }
+
+            50%{
+                margin-top:-10px;
+            }
+
+            100% {
+                margin-top:0px;
+                left: 70%;
+            }
+
+        }
+
+
+
+        body {
+            margin: 0;
+        }
+
+        #road {
+            width: 100%;
+        }
+
+        #sportsCar {
+            border: 1px solid blue;
+            width: fit-content;
+            position: relative;
+            top: -158px;
+            animation-name: carAnimation;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-direction: reverse;
+        }
+
+        #carBody {
+            width: 200px;
+        }
+
+        .wheel {
+            position: relative;
+            width: 28px;
+            animation-name: wheelRotation;
+            animation-duration: 2s;
+            animation-iteration-count: 2;
+            animation-timing-function: linear;
+        }
+
+        .wheel:nth-child(2) {
+            left: -173px;
+            top: -13px;
+        }
+
+        .wheel:nth-child(3) {
+            left: -91px;
+            top: -12px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <img id="road" src="myroad.jpg" alt="">
+    </div>
+
+
+    <div id="sportsCar">
+        <img id="carBody" src="my-car.png" alt="">
+
+        <img class="wheel" src="wheel.png" alt="">
+        <img class="wheel" src="wheel.png" alt="">
+    </div>
+
+
+</body>
+
+</html>
