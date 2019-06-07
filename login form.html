@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-image: url(my.jpeg);
+    background-size: cover;
+    background-position: center center;
+}
+.form-area{
+    width: 500px;
+    height: 450px;
+    margin: 60px auto 0;
+    position: relative;
+    background:rgba(0,0,0,0.4);
+    text-align: center;
+    padding: 35px;
+    border: 3px solid #fff;
+    border-radius: 70px 0 70px 0;
+    margin-top: 60px;
+}
+.form-area h2{
+    margin-bottom: 45px;
+    color: #fff;
+
+}
+.img-area{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background:chocolate;
+    position: absolute;
+    top:-5%;
+    left:45%;
+}
+.img-area img{
+    width:70%;
+    padding:10px;
+    
+}
+input{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px 0 15px 0;
+    margin-bottom: 15px;
+    background-color:transparent;
+    color:#fff;
+    font-size: 20px;
+}
+.form-area p{
+    text-align: left;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.btn{
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background:chocolate;
+    border-radius: 25px;
+    color:#fff;
+    text-transform: uppercase;
+    margin-top:20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-text{
+    display: block;
+    height: 100%;
+    position: relative;
+    top:0;
+    transition: top 0.6s;
+    width: 100%;
+}
+.btn:hover .btn-text{
+    top: -100%;
+}
+.for-pass{
+    text-decoration: none;
+    display: block;
+    margin-top: 30px;
+    font-size:20px;
+    font-weight: bold;
+    color:#fff;
+}
+</style>
+<body>
+    <div class="form-area">
+        <div class="img-area">
+<img src="./user.png" alt="avatar"/>
+</div>
+<h2>Login Form</h2>
+<p>your Name</p>
+<input type="text">
+<p>your Email</p>
+<input type="Email">
+<a href="# "class="btn">
+    <span class="btn-text">Sign In</span>
+    <span class="btn-text">Log in</span>
+</a>
+<a href="#"  class="for-pass">Forgot Password?</a>
+
+    </div>
+</body>
+</html>

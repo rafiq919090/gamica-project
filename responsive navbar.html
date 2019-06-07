@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .con{
+        display: flex;
+        flex-direction: row;
+        background-color: blue;
+flex-wrap: wrap;        
+    }
+   .con div{
+        background-color: antiquewhite;
+        width: 100px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        margin:10px;
+        border: 2px solid ;
+    }
+    .con :hover{
+        background-color: blueviolet;
+    }
+    @media screen and  (max-width:720px){
+    #first , #second , #thrid , #forth{
+        width:100% !important;
+        background-color: aquamarine;
+    
+    }
+   
+}
+@media screen and (max-width:560px){
+    #first , #second , #thrid , #forth{
+        display: none;
+    }
+}
+    
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div id="first">Home</div>
+        <div id="second">Offer</div>
+        <div id="thrid">aobut Us</div>
+        <div id="forth">Contact Us</div>
+
+
+    </div>
+</body>
+</html>

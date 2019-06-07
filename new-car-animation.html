@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes car{
+0%{left:0px}
+50%{margin-top:10px}
+100%{left:70%}
+        }
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(359deg)
+        }
+    }
+    @keyframes car2{
+        0%{
+            left:0px;
+        }
+        100%{
+            left:70%;
+        }
+    }
+    body{
+        margin:0;
+    }
+    #road{
+        width: 100%;
+    }
+#sportcar{
+    width: fit-content;
+    position:relative;
+    top:-158px;
+    transform: scale(2);
+    animation-name: car;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#carbody{
+    width: 200px;
+}
+.wheel{
+    position: relative;
+    width:28px;
+    animation-name:rotate;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.wheel:nth-child(2){
+left:-173px;
+top:-13px;
+}
+.wheel:nth-child(3){
+    left:-91px;
+    top:-12px;
+
+}
+#secondcar{
+    width: fit-content;
+    position:relative;
+    top:-400px;
+    transform: scaleX(-1) scale(2);
+    animation-name:car2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction:reverse;
+
+}
+#car-basic{
+    width: 200px;
+}
+.wheel2{
+    position: relative;
+    width:28px;
+    animation-name:rotate1;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.wheel2:nth-child(2){
+left:-173px;
+top:-13px;
+}
+.wheel2:nth-child(3){
+    left:-91px;
+    top:-12px;
+
+}   
+@keyframes rotate1{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(359deg)
+        }
+    }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div >
+<img src="./myroad.jpg" id="road"/>
+    </div>
+    <div id="sportcar">
+        <img src="./my-car.png" id="carbody"/>
+        <img src="./wheel.png" class="wheel"/>
+        <img src="./wheel.png" class="wheel"/>
+
+    </div>
+    <div id="secondcar">
+            <img src="./my-car.png" id="car-basic"/>
+            <img src="./wheel.png" class="wheel2"/>
+            <img src="./wheel.png" class="wheel2"/>
+    
+        </div>
+</body>
+</html>
