@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transition</title>
+    <style>
+    .bit{
+        width: 120px;
+        height: 120px;
+        background-color: blue;
+    
+        /* transform: rotateX(380deg) rotateY(580deg) scale( 1.5); */
+        transition: width 2s linear 0s , height 2s linear 0s;
+        border-radius:80px;
+    
+        
+    }
+    .bit:hover{
+        background-color: blueviolet;
+       transform: scale(1.2, 1.2);
+    }
+    </style>
+</head>
+<body>
+    <div class="bit">Stop</div>
+    <div class="bit">Play</div>
+    <div class="bit">Pause</div>
+</body>
+</html>

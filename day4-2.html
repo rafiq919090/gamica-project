@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid</title>
+
+    <style>
+    
+    .items:nth-child(1){
+        grid-area:area1;
+        background-color: aqua;
+
+    }
+    .items:nth-child(2){
+        grid-area:area2;
+        background-color: blue;
+    }
+    .items:nth-child(3){
+        grid-area:area3;
+        background-color: blueviolet;
+
+    }
+    .items:nth-child(4){
+        grid-area:area4;
+        background-color: chartreuse;
+    }
+    .items:nth-child(5){
+        grid-area:area5;
+        background-color: deeppink;
+    }
+    .items:nth-child(6){
+        grid-area:area6;
+        background-color: goldenrod;
+    }
+    .parent{
+        display: grid;
+        grid-template-rows:3;
+  grid-template-columns:3;
+  
+  grid-template: "area1 area2 area3"
+                 "area4 area5 area5"
+                 "area6 area5 area5";
+                 width:600px;
+                 height: 600px;
+
+            
+    }
+   .items{
+       margin:5px;
+   }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="items">a</div>
+        <div class="items" >b</div>
+        <div class="items">c</div>
+        <div class="items">d</div>
+        <div class="items">e</div>
+        <div class="items">F</div>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+#ro{
+    width: 100%;
+    height: 300px;
+    
+}
+.black-car{
+    position:absolute;
+    left:70px;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    top:60px;
+    left:10px;
+    overflow:hidden;
+}
+
+#wh1{
+    position:absolute;
+width: 70px;
+left:-425px;
+bottom: 30px;
+}
+#wh2{
+    position: relative;
+    width: 70px;
+    left:-210px;
+bottom: 30px;
+}
+ @keyframes drive{
+    0%{
+left:-150%;
+    }
+50%{
+left:0%;
+}
+100%{
+left:100%;
+}
+} 
+
+/* #wh1{
+    position: relative;
+    width: 70px;
+    bottom:190px;
+    left:140px;
+}
+#wh2{
+    position: relative;
+    width: 70px;
+    bottom:190px;
+    left:350px;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    </style>
+</head>
+<body>
+    <div id="road">
+            <img src="./myroad.jpg" alt="road" />
+        </div>
+            <div class="black-car">
+        <img src="./my-car.png " alt="car"  width="500px"/>
+            </div>
+            <div class="tyres"> 
+        <img src="./wheel.png" alt=wheels  />
+        <img src="./wheel.png" alt=wheels/ />
+    </div>
+    
+    <!-- </div> -->
+</body>
+</html>
